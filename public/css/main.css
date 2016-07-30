@@ -1,0 +1,12 @@
+*{
+	font-family: Helvetica;
+}
+
+body{
+	background: #fafafa;
+}
+
+#map-container{
+	/*background: #000;*/
+	height: 400px;
+}

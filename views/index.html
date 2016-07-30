@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Carpool</title>
+		<link rel="stylesheet" href="css/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry"></script>
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui large secondary blue pointing menu">
+				<a class="active item">Home</a>
+			</div>
+		</div>
+		<div class="ui hidden divider"></div>
+		<div class="ui container">
+			<div class="ui blue grid segment">
+				<div class="sixteen wide column">
+					<h4 class="ui left aligned dividing header">Map</h4>
+					<div id="map-container"></div>
+					<div class="row">
+						<div class="field">
+						<button type="submit" class="ui red icon large button" id="finish">Finish
+						</button>
+
+						<button type="submit" class="ui primary basic icon large button" id="removeMarker">Remove Last Marker
+						</button>
+						<button type="submit" class="ui primary blue icon large button" id="reset">Reset
+						</button>
+					</div>
+					</div>
+
+					<div class="row">
+						<p>Distance : <span id="dist"></span></p>
+						<p>Optimum Path : <span id="path"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
